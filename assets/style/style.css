@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*HEADER*/
+header{
+    background-color: CadetBlue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 7rem;
+    text-align: center;
+}
+nav>a{
+    border-radius: 15px;
+    width: 8rem;
+    height: 1.5rem;
+    font-size: 20px;
+    color: CadetBlue;
+    background-color: white;
+    text-decoration: none;
+}
+nav>a:hover{
+    background-color: LightCyan;
+}
+
+/*MAIN*/
+main{
+    background-color: LightCyan;
+    padding-bottom: 2rem;
+}
+.banner{
+    background-image: url("../images/banner.jpg");
+    background-size: 100%;
+    background-position: center;
+    height: 8rem;
+}
+section.seccionLugar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+h2{
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    width: 90%;
+}
+section article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+    border-radius: 15px;
+    width: 20rem;
+    height: 18rem;
+    position: relative;
+}
+h3{
+    color: white;
+    font-size: 22px;
+}
+article div{
+    width: 85%;
+}
+article div img{
+    width: 100%;
+    height: 12rem;
+    border-radius: 15px;
+}
+article p{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+}
+section.SeccionFecha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+section.SeccionFecha div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: cadetblue;
+    border-radius: 15px;
+    width: 20rem;
+    height: 19rem;
+}
+section.SeccionFecha ul{
+    color: white;
+    font-size: 20px;
+}
+tr, th, td{
+    border: 1px solid white;
+    color: white;
+    width: 6rem;
+    height: 2.5rem;
+    text-align: center;
+}
+/*Footer*/
+footer{
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 9rem;
+    color: white;
+    font-size: 21px;
+}
+input#submit{
+    background-color: cadetblue;
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+@media(min-width:768px) and (max-width: 1024px){
+    h2{
+        width: 80%;
+        height: 3rem;
+        font-size: 30px;
+        padding: .5rem;
+    }
+    section article{
+        width: 28rem;
+        height: 25rem;
+    }
+    article div img{
+        height: 15rem;
+    }
+    article p{
+        bottom: 40px;
+        left: 30px;
+    }
+    section.SeccionFecha div{
+        width: 25rem;
+        height: 22rem;
+    }
+    section.SeccionFecha ul{
+        font-size: 25px;
+    }
+    tr, th, td{
+        width: 7rem;
+        height: 3rem;
+        font-size: 25px;
+    }
+    /*Footer*/
+    footer{
+        height: 10rem;
+        font-size: 25px;
+    }
+    input#submit{
+        font-size: 19px;
+        width: 6rem;
+        height: 2rem;
+    }
+}
+@media(min-width:1025px){
+    header{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+    }
+    header nav{
+        flex-direction: row;
+        justify-content: space-around;
+        height: 1.5rem;
+        width: 27rem;
+        padding-left: 1rem;
+    }
+    div.container{
+        display: flex;
+        justify-content: center;
+    }
+    /*Footer*/
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        height: 5rem;
+        padding: 0 0.5rem;
+    }
+}
+
+
+
+
